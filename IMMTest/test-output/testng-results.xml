@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35598" started-at="2018-08-16T10:58:33Z" finished-at="2018-08-16T10:59:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35598" started-at="2018-08-16T10:58:33Z" finished-at="2018-08-16T10:59:08Z">
+      <class name="com.imm.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.imm.qa.testcases.LoginPageTest@42e26948]" name="setUp" is-config="true" duration-ms="9459" started-at="2018-08-16T10:58:33Z" finished-at="2018-08-16T10:58:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.imm.qa.testcases.LoginPageTest@42e26948]" name="loginPageTitleTest" duration-ms="20" started-at="2018-08-16T10:58:42Z" finished-at="2018-08-16T10:58:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.imm.qa.testcases.LoginPageTest@42e26948]" name="tearDown" is-config="true" duration-ms="114" started-at="2018-08-16T10:58:42Z" finished-at="2018-08-16T10:58:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.imm.qa.testcases.LoginPageTest@42e26948]" name="setUp" is-config="true" duration-ms="6775" started-at="2018-08-16T10:58:42Z" finished-at="2018-08-16T10:58:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="immLogoImageTest()[pri:2, instance:com.imm.qa.testcases.LoginPageTest@42e26948]" name="immLogoImageTest" duration-ms="3472" started-at="2018-08-16T10:58:49Z" finished-at="2018-08-16T10:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- immLogoImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.imm.qa.testcases.LoginPageTest@42e26948]" name="tearDown" is-config="true" duration-ms="101" started-at="2018-08-16T10:58:53Z" finished-at="2018-08-16T10:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.imm.qa.testcases.LoginPageTest@42e26948]" name="setUp" is-config="true" duration-ms="8231" started-at="2018-08-16T10:58:53Z" finished-at="2018-08-16T10:59:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.imm.qa.testcases.LoginPageTest@42e26948]" name="loginTest" duration-ms="7283" started-at="2018-08-16T10:59:01Z" finished-at="2018-08-16T10:59:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.imm.qa.testcases.LoginPageTest@42e26948]" name="tearDown" is-config="true" duration-ms="87" started-at="2018-08-16T10:59:08Z" finished-at="2018-08-16T10:59:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.imm.qa.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
