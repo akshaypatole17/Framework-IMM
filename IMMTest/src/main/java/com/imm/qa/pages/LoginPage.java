@@ -31,7 +31,7 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	}
 	
-	public boolean validateImmImagae() {
+	public boolean validateImmImage() {
 		return immLogo.isDisplayed();
 	}
 	

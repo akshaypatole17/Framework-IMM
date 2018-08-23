@@ -19,7 +19,7 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("/home/akshay/IMM Workspace/IMMTest/src/main/java/com/imm/qa/config/config.properties");
+			FileInputStream ip = new FileInputStream("/home/akshay/git/FrameworkIMM/IMMTest/src/main/java/com/imm/qa/config/config.properties");
 			prop.load(ip);
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();

@@ -31,7 +31,7 @@ public class LoginPageTest extends TestBase {
 	
 	@Test(priority=2)
 	public void immLogoImageTest() {
-		Boolean flag = loginPage.validateImmImagae();
+		Boolean flag = loginPage.validateImmImage();
 		Assert.assertTrue(flag);
 	}
 	

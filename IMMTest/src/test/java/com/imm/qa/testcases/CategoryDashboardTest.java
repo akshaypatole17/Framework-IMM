@@ -12,13 +12,14 @@ import com.imm.qa.pages.HomePage;
 import com.imm.qa.pages.LoginPage;
 import com.imm.qa.util.TestUtil;
 
-public class HomePageTest extends TestBase {
+public class CategoryDashboardTest extends TestBase{
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
 	CategoryDashboardPage categoryDashboardPage;
+	CategoryViewPage categoryViewPage;
 	
-	public HomePageTest() {
+	public CategoryDashboardTest() {
 		super();
 	}
 	
@@ -31,31 +32,19 @@ public class HomePageTest extends TestBase {
 	}
 	
 	@Test(priority=1)
-	public void verifyHomePageTitleTest() {
-		String homePageTitle = homePage.verifyHomePageTitle();
-		Assert.assertEquals(homePageTitle, "IMM","Home page title not matched");
+	public void verifyCategoryPageLabel() {
+		Assert.assertTrue(categoryDashboardPage.verifyCategoryDashboardLabel());
 	}
 	
 	@Test(priority=2)
-	public void verifyUserNameTest() {
-		//testUtil.switchToFrame();
-		Assert.assertTrue(homePage.verifyCorrectUserName());
+	public void verifyClickOnCategory() {
+		categoryViewPage = categoryDashboardPage.clickOnCategory();
 	}
-	
-	@Test(priority=3)
-	public void verifyCategoriesLinkTest() {
-		categoryDashboardPage = homePage.clickOnCataegoriesLink();		
-	}
-	
-	
-	
 	
 	
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
-
-	
 
 }

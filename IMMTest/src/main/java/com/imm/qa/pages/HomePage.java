@@ -11,7 +11,7 @@ public class HomePage extends TestBase  {
 	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/section/imm-nav/header/div[1]/imm-user-info/div/button/span")
 	WebElement userNameLabel;
 	
-	@FindBy(xpath="/html/body/imm-root/imm-categories/div/section/imm-collection-category-search-bar/div/div/div/span[2]/a/button")
+	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/section/imm-collection-category-search-bar/div/div/div/span[2]/a/button")
 	WebElement categoriesLink;
 	
 	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/section/imm-nav/header/div[1]/div/a/imm-brand/div/h1")
@@ -29,6 +29,10 @@ public class HomePage extends TestBase  {
 	
 	public String verifyHomePageTitle() {
 		return driver.getTitle();
+	}
+	
+	public boolean verifyCorrectUserName() {
+		return userNameLabel.isDisplayed();
 	}
 	
 	public CategoryDashboardPage clickOnCataegoriesLink() {
