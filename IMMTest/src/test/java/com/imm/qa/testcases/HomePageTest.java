@@ -60,11 +60,10 @@ public class HomePageTest extends TestBase {
 		collectionViewPage = homePage.clickOnCollectionLink();		
 	}
 	
-	@Test(priority=5)
+	@Test(priority=6)
 	public void verifyAddCollectionLinkTest() {
 		addCollectionPopUpPage = homePage.clickOnAddCollectionLink();		
 	}
-	
 	
 	
 	@AfterMethod
