@@ -35,20 +35,24 @@ public class HomePage extends TestBase  {
 		return userNameLabel.isDisplayed();
 	}
 	
-	public CategoryDashboardPage clickOnCataegoriesLink() {
+	public CategoryDashboardPage clickOnCategoriesLink() {
 		categoriesLink.click();
 		return new CategoryDashboardPage();
 	}
 	
-	public HomePage immLogoLinkPage() {
+	public HomePage immLogoLink() {
 		immLogoLink.click();
 		return new HomePage();
 	}
 	
-	public CollectionViewPage clickOnCollectionLinkPage() {
+	public CollectionViewPage clickOnCollectionLink() {
 		clickOnCollectionLink.click();
 		return new CollectionViewPage();
 	}
 	
-	
+	public AddCollectionPopUpPage clickOnAddCollectionLink() {
+		addCollectionLink.click();
+		return new AddCollectionPopUpPage();
+	}
+
 }

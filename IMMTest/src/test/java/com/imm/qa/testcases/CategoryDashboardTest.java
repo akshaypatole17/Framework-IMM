@@ -28,19 +28,19 @@ public class CategoryDashboardTest extends TestBase{
 		initialisation();
 		testUtil = new TestUtil();
 		loginPage = new LoginPage();
-		homePage = loginPage.Login(prop.getProperty("username"), prop.getProperty("password"));		 		
+		homePage = loginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		categoryDashboardPage = new CategoryDashboardPage();
 	}
 	
 	@Test(priority=1)
-	public void verifyCategoryPageLabel() {
-		Assert.assertTrue(categoryDashboardPage.verifyCategoryDashboardLabel());
+	public void verifyCategoryPageLabelTest() {
+		Assert.assertTrue(categoryDashboardPage.verifyCategoryDashboardLabelDailyRefresh());
 	}
 	
 	@Test(priority=2)
-	public void verifyClickOnCategory() {
+	public void verifyClickOnCategoryTest() {
 		categoryViewPage = categoryDashboardPage.clickOnCategory();
 	}
-	
 	
 	@AfterMethod
 	public void tearDown() {

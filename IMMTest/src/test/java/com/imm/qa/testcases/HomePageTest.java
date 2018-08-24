@@ -6,8 +6,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.imm.qa.base.TestBase;
+import com.imm.qa.pages.AddCollectionPopUpPage;
 import com.imm.qa.pages.CategoryDashboardPage;
-import com.imm.qa.pages.CategoryViewPage;
+import com.imm.qa.pages.CollectionViewPage;
 import com.imm.qa.pages.HomePage;
 import com.imm.qa.pages.LoginPage;
 import com.imm.qa.util.TestUtil;
@@ -17,6 +18,8 @@ public class HomePageTest extends TestBase {
 	HomePage homePage;
 	TestUtil testUtil;
 	CategoryDashboardPage categoryDashboardPage;
+	CollectionViewPage collectionViewPage;
+	AddCollectionPopUpPage addCollectionPopUpPage;
 	
 	public HomePageTest() {
 		super();
@@ -44,10 +47,23 @@ public class HomePageTest extends TestBase {
 	
 	@Test(priority=3)
 	public void verifyCategoriesLinkTest() {
-		categoryDashboardPage = homePage.clickOnCataegoriesLink();		
+		categoryDashboardPage = homePage.clickOnCategoriesLink();		
 	}
 	
+	@Test(priority=4)
+	public void verifyImmLogoLinkTest() {
+		homePage = homePage.immLogoLink();	
+	}
 	
+	@Test(priority=5)
+	public void verifyCollectionLinkTest() {
+		collectionViewPage = homePage.clickOnCollectionLink();		
+	}
+	
+	@Test(priority=5)
+	public void verifyAddCollectionLinkTest() {
+		addCollectionPopUpPage = homePage.clickOnAddCollectionLink();		
+	}
 	
 	
 	
