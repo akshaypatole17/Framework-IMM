@@ -3,14 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.imm.qa.testcases.CategoryDashboardTest">
+      <class name="com.imm.qa.testcases.HomePageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="verifyCategoryPageLabel"/>
+          <include name="verifyUserNameTest"/>
           <include name="tearDown"/>
-          <include name="verifyClickOnCategory"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="verifyCollectionLinkTest"/>
+          <include name="verifyImmLogoLinkTest"/>
+          <include name="verifyCategoriesLinkTest"/>
+          <include name="verifyEditCollectionLinkTest"/>
+          <include name="verifyAddCollectionLinkTest"/>
         </methods>
-      </class> <!-- com.imm.qa.testcases.CategoryDashboardTest -->
+      </class> <!-- com.imm.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -22,6 +22,16 @@ public class HomePage extends TestBase  {
 	
 	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/div/div[2]/imm-product-collection-list/table/tbody/tr[1]/td[1]/a/span")
 	WebElement clickOnCollectionLink;
+	
+	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/div/div[2]/imm-product-collection-detail/imm-product-collection-header/div/div[2]/div/imm-product-collection-edit/span/span/i[2]")
+	WebElement clickOnEditCollectionLink;
+	
+	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/div/div[2]/imm-product-collection-list/table/tbody/tr[1]/td[1]/a/span\n")
+	WebElement clickOnRecentCollectionLink;
+	
+	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/div/div[2]/imm-product-collection-detail/imm-product-collection-header/div/div[2]/div/imm-product-collection-remove/div/button/span/i[2]")
+	WebElement clickOnDeleteCollectionLink;
+	
 	//Initializing the Page Objects:
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -50,9 +60,21 @@ public class HomePage extends TestBase  {
 		return new CollectionViewPage();
 	}
 	
-	public AddCollectionPopUpPage clickOnAddCollectionLink() {
+	public void clickOnAddCollectionLink() {
 		addCollectionLink.click();
-		return new AddCollectionPopUpPage();
+	}
+	
+	public CollectionViewPage clickoOnRecentCollectionLink(){
+		clickOnRecentCollectionLink.click();
+		return new CollectionViewPage();
+	}
+	
+	public void clickOnEditCollectionLink() {
+		clickOnEditCollectionLink.click();
+	}
+	
+	public void clickOnDeleteCollectionLink() {
+		clickOnDeleteCollectionLink.click();
 	}
 
 }

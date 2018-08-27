@@ -1,65 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="IMM Application Automation Test Suite" duration-ms="87509" started-at="2018-08-24T11:43:35Z" finished-at="2018-08-24T11:45:03Z">
+  <suite name="Default suite" duration-ms="20168" started-at="2018-08-27T07:52:08Z" finished-at="2018-08-27T07:52:28Z">
     <groups>
     </groups>
-    <test name="IMM Application Test Cases" duration-ms="87509" started-at="2018-08-24T11:43:35Z" finished-at="2018-08-24T11:45:03Z">
-      <class name="com.imm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.imm.qa.testcases.LoginPageTest@53b32d7]" name="setUp" is-config="true" duration-ms="11498" started-at="2018-08-24T11:43:35Z" finished-at="2018-08-24T11:43:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.imm.qa.testcases.LoginPageTest@53b32d7]" name="loginPageTitleTest" duration-ms="28" started-at="2018-08-24T11:43:47Z" finished-at="2018-08-24T11:43:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.imm.qa.testcases.LoginPageTest@53b32d7]" name="tearDown" is-config="true" duration-ms="112" started-at="2018-08-24T11:43:47Z" finished-at="2018-08-24T11:43:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.imm.qa.testcases.LoginPageTest@53b32d7]" name="setUp" is-config="true" duration-ms="7293" started-at="2018-08-24T11:44:47Z" finished-at="2018-08-24T11:44:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="immLogoImageTest()[pri:2, instance:com.imm.qa.testcases.LoginPageTest@53b32d7]" name="immLogoImageTest" duration-ms="8095" started-at="2018-08-24T11:44:55Z" finished-at="2018-08-24T11:45:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- immLogoImageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.imm.qa.testcases.LoginPageTest@53b32d7]" name="tearDown" is-config="true" duration-ms="78" started-at="2018-08-24T11:45:03Z" finished-at="2018-08-24T11:45:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.imm.qa.testcases.LoginPageTest -->
-      <class name="com.imm.qa.testcases.CategoryDashboardTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.imm.qa.testcases.CategoryDashboardTest@548e7350]" name="setUp" is-config="true" duration-ms="26332" started-at="2018-08-24T11:44:12Z" finished-at="2018-08-24T11:44:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyCategoryPageLabelTest()[pri:1, instance:com.imm.qa.testcases.CategoryDashboardTest@548e7350]" name="verifyCategoryPageLabelTest" duration-ms="8828" started-at="2018-08-24T11:44:38Z" finished-at="2018-08-24T11:44:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCategoryPageLabelTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.imm.qa.testcases.CategoryDashboardTest@548e7350]" name="tearDown" is-config="true" duration-ms="137" started-at="2018-08-24T11:44:47Z" finished-at="2018-08-24T11:44:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.imm.qa.testcases.CategoryDashboardTest -->
+    <test name="Default test" duration-ms="20168" started-at="2018-08-27T07:52:08Z" finished-at="2018-08-27T07:52:28Z">
       <class name="com.imm.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.imm.qa.testcases.HomePageTest@5442a311]" name="setUp" is-config="true" duration-ms="24888" started-at="2018-08-24T11:43:47Z" finished-at="2018-08-24T11:44:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.imm.qa.testcases.HomePageTest@548e7350]" name="setUp" is-config="true" duration-ms="12877" started-at="2018-08-27T07:52:08Z" finished-at="2018-08-27T07:52:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.imm.qa.testcases.HomePageTest@5442a311]" name="verifyHomePageTitleTest" duration-ms="20" started-at="2018-08-24T11:44:12Z" finished-at="2018-08-24T11:44:12Z">
+        <test-method status="PASS" signature="verifyDeleteCollectionLinkTest()[pri:7, instance:com.imm.qa.testcases.HomePageTest@548e7350]" name="verifyDeleteCollectionLinkTest" duration-ms="7146" started-at="2018-08-27T07:52:21Z" finished-at="2018-08-27T07:52:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.imm.qa.testcases.HomePageTest@5442a311]" name="tearDown" is-config="true" duration-ms="144" started-at="2018-08-24T11:44:12Z" finished-at="2018-08-24T11:44:12Z">
+        </test-method> <!-- verifyDeleteCollectionLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.imm.qa.testcases.HomePageTest@548e7350]" name="tearDown" is-config="true" duration-ms="102" started-at="2018-08-27T07:52:28Z" finished-at="2018-08-27T07:52:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.imm.qa.testcases.HomePageTest -->
-    </test> <!-- IMM Application Test Cases -->
-  </suite> <!-- IMM Application Automation Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

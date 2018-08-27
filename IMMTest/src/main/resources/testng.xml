@@ -4,9 +4,9 @@
 <suite name="IMM Application Automation Test Suite">
   <test name="IMM Application Test Cases" >
     <classes>
+   	  <class name="com.imm.qa.testcases.CategoryDashboardTest"/>
       <class name="com.imm.qa.testcases.LoginPageTest"/>
       <class name="com.imm.qa.testcases.HomePageTest"/>
-      <class name="com.imm.qa.testcases.CategoryDashboardTest"/>
     </classes>
  </test>
 </suite>
