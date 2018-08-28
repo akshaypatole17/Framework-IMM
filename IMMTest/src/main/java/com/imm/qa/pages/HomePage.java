@@ -23,14 +23,17 @@ public class HomePage extends TestBase  {
 	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/div/div[2]/imm-product-collection-list/table/tbody/tr[1]/td[1]/a/span")
 	WebElement clickOnCollectionLink;
 	
+	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/div/div[2]/imm-product-collection-list/table/tbody/tr[1]/td[1]/a/span\n")
+	WebElement clickOnRecentCollectionLink;
+
 	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/div/div[2]/imm-product-collection-detail/imm-product-collection-header/div/div[2]/div/imm-product-collection-edit/span/span/i[2]")
 	WebElement clickOnEditCollectionLink;
 	
-	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/div/div[2]/imm-product-collection-list/table/tbody/tr[1]/td[1]/a/span\n")
-	WebElement clickOnRecentCollectionLink;
-	
 	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/div/div[2]/imm-product-collection-detail/imm-product-collection-header/div/div[2]/div/imm-product-collection-remove/div/button/span/i[2]")
 	WebElement clickOnDeleteCollectionLink;
+	
+	@FindBy(xpath="/html/body/imm-root/imm-product-collections/div/div/div[2]/imm-product-collection-detail/imm-product-collection-header/div/div[2]/div/imm-product-collection-download/span/span/i[2]")
+	WebElement clickOnExportCollectionLink;
 	
 	//Initializing the Page Objects:
 	public HomePage() {
@@ -60,21 +63,27 @@ public class HomePage extends TestBase  {
 		return new CollectionViewPage();
 	}
 	
-	public void clickOnAddCollectionLink() {
+	public AddCollectionPopUpPage clickOnAddCollectionLink() {
 		addCollectionLink.click();
+		return new AddCollectionPopUpPage();
 	}
 	
 	public CollectionViewPage clickoOnRecentCollectionLink(){
 		clickOnRecentCollectionLink.click();
 		return new CollectionViewPage();
 	}
-	
-	public void clickOnEditCollectionLink() {
+	public EditCollectionPopUpPage clickOnEditCollectionLink() {
 		clickOnEditCollectionLink.click();
+		return new EditCollectionPopUpPage();
 	}
 	
 	public void clickOnDeleteCollectionLink() {
 		clickOnDeleteCollectionLink.click();
 	}
-
+	
+	public void clickOnExportCollectionLink() {
+		clickOnExportCollectionLink.click();
+	}
+	
+	
 }

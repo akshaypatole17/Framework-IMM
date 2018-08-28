@@ -1,13 +1,19 @@
 package com.imm.qa.testcases;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+
+import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.imm.qa.base.TestBase;
+import com.imm.qa.pages.AddCollectionPopUpPage;
 import com.imm.qa.pages.CategoryDashboardPage;
 import com.imm.qa.pages.CollectionViewPage;
+import com.imm.qa.pages.EditCollectionPopUpPage;
 import com.imm.qa.pages.HomePage;
 import com.imm.qa.pages.LoginPage;
 import com.imm.qa.util.TestUtil;
@@ -18,6 +24,8 @@ public class HomePageTest extends TestBase {
 	TestUtil testUtil;
 	CategoryDashboardPage categoryDashboardPage;
 	CollectionViewPage collectionViewPage;
+	AddCollectionPopUpPage addCollectionPopUp;
+	EditCollectionPopUpPage editCollectionPopUp; 
 	
 	public HomePageTest() {
 		super();
@@ -28,7 +36,10 @@ public class HomePageTest extends TestBase {
 		initialisation();
 		testUtil = new TestUtil();
 		loginPage = new LoginPage();
-		homePage = loginPage.Login(prop.getProperty("username"), prop.getProperty("password"));		 		
+		homePage = loginPage.Login(prop.getProperty("username"), prop.getProperty("password"));	
+		addCollectionPopUp = new AddCollectionPopUpPage();
+		editCollectionPopUp = new EditCollectionPopUpPage();
+		collectionViewPage = new CollectionViewPage();
 	}
 	
 	@Test(priority=1)
@@ -59,8 +70,11 @@ public class HomePageTest extends TestBase {
 	}
 	
 	@Test(priority=6)
-	public void verifyAddCollectionLinkTest() {
-		homePage.clickOnAddCollectionLink();		
+	public void verifyAddCollectionLinkTest() throws InterruptedException, AWTException {
+		addCollectionPopUp = homePage.clickOnAddCollectionLink();
+		Thread.sleep(5000);
+		String Title = addCollectionPopUp.validateAddCollectionTitle();
+		Assert.assertEquals(Title, "+ Add Collection");
 	}
 	
 	@Test(priority=7)
@@ -75,7 +89,11 @@ public class HomePageTest extends TestBase {
 		homePage.clickOnDeleteCollectionLink();	
 	}
 	
-	
+	@Test(priority=9)
+	public void enterCollectionNameTest() {
+		addCollectionPopUp = homePage.clickOnAddCollectionLink();
+		addCollectionPopUp.enterCollectionName();
+	}
 	
 	@AfterMethod
 	public void tearDown() {

@@ -5,15 +5,9 @@
     <classes>
       <class name="com.imm.qa.testcases.HomePageTest">
         <methods>
-          <include name="verifyUserNameTest"/>
           <include name="tearDown"/>
-          <include name="verifyHomePageTitleTest"/>
           <include name="setUp"/>
-          <include name="verifyCollectionLinkTest"/>
-          <include name="verifyImmLogoLinkTest"/>
-          <include name="verifyCategoriesLinkTest"/>
-          <include name="verifyEditCollectionLinkTest"/>
-          <include name="verifyAddCollectionLinkTest"/>
+          <include name="enterCollectionNameTest"/>
         </methods>
       </class> <!-- com.imm.qa.testcases.HomePageTest -->
     </classes>
